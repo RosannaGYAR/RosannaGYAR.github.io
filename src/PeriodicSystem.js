@@ -20,7 +20,6 @@ const PeriodicSystem = () => {
   const [data, setData] = useState([])
 
   const fetchApiData = () => {
-    // setData(getData())
     let apiData = [{}]
     axios.request(options).then(function (response) {
       console.log('api', response.data);
